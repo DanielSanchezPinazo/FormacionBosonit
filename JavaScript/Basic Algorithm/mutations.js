@@ -5,14 +5,27 @@ Lastly, ["Alien", "line"], should return "true" because all of the letters in "l
 
 function mutation(arr) {
 
-    const result = false;
-    const count = 0;
-    arr = [arr[0].toLowerCase(), arr[1].toLowerCase()];
+    let result = false;
+    let count = 0;
+    let low = [arr[0].toLowerCase(), arr[1].toLowerCase()];
     // const word1 = arr[0].toLowerCase();
     // const word2 = arr[1].toLowerCase();
-    console.log(arr);
+    // console.log(low);
+    // console.log("hola " + low[1][1]);
+    for (let i = 0; i < low[1].length; i++) {
 
-    
+        if (low[0].includes(low[1][i])) {
+            
+            count++;
+        }   
+    }
+
+    if (count == low[1].length) {
+        
+        result = true;
+    }
+
+    // console.log(count); 
 
     return result;
   }
