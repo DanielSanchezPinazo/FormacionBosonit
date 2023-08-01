@@ -15,7 +15,7 @@ function destroyer(arr) {
 
     //     if ( newArr.includes(element) ) {
     //         console.log(arr.indexOf(element));
-    //         // arr.splice(arr.indexOf(element), 1); 
+             // arr.splice(arr.indexOf(element), 1); 
 
     //     }
     // });
